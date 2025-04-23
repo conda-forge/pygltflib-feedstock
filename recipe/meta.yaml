@@ -1,4 +1,4 @@
-{% set version = "1.16.3" %}
+{% set version = "1.16.4" %}
 
 package:
   name: pygltflib
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pygltflib/pygltflib-{{ version }}.tar.gz
-  sha256: 10f11c774b4bdd60a4824c7bd31186d924235ddb767fca8e8d36755caedb0dcf
+  sha256: 7816253ef51b07a208864b94332bce8c509aa0f9b827d8771cf271293ecebb11
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
